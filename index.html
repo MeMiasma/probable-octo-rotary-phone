@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="description" content="Python-разработчик. Telegram-боты, API-интеграции, автоматизация бизнес-процессов и backend-разработка." />
+  <title>Python Developer — портфолио</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="На главную">
+      <span class="brand-mark">&lt;/&gt;</span><span>dev<span class="brand-dot">.</span>portfolio</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#services">Что делаю</a>
+      <a href="#projects">Проекты</a>
+      <a href="#process">Процесс</a>
+      <a href="#about">Обо мне</a>
+      <a class="nav-cta" href="#contact">Обсудить проект <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> OPEN TO WORK <span class="eyebrow-divider">/</span> PYTHON DEVELOPER</div>
+        <h1>Превращаю сложные<br><span class="gradient-text">задачи в рабочий код.</span></h1>
+        <p class="hero-lead">Разрабатываю Telegram-ботов, backend-сервисы и автоматизацию для бизнеса. От идеи и MVP до стабильного решения, готового к росту.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Смотреть проекты <span>↓</span></a>
+          <a class="button button-ghost" href="#contact">Связаться со мной <span>↗</span></a>
+        </div>
+        <div class="hero-proof">
+          <div><strong>10+</strong><span>лет опыта*</span></div>
+          <div><strong>Python</strong><span>основной стек</span></div>
+          <div><strong>MVP → Scale</strong><span>полный цикл</span></div>
+        </div>
+        <p class="fine-print">*Указывайте этот срок, только если он соответствует вашему реальному опыту.</p>
+      </div>
+      <div class="hero-visual" aria-label="Декоративная иллюстрация кода">
+        <div class="orb orb-a"></div><div class="orb orb-b"></div>
+        <div class="code-window">
+          <div class="window-top"><div class="window-dots"><i></i><i></i><i></i></div><span>solution.py</span><span class="window-lock">● production-minded</span></div>
+          <div class="code-content">
+            <div><span class="line-no">01</span><span class="code-purple">class</span> <span class="code-blue">Solution</span>:</div>
+            <div><span class="line-no">02</span>&nbsp;&nbsp;<span class="code-purple">def</span> <span class="code-yellow">build</span>(self, idea):</div>
+            <div><span class="line-no">03</span>&nbsp;&nbsp;&nbsp;&nbsp;problem = idea.<span class="code-blue">understand</span>()</div>
+            <div><span class="line-no">04</span>&nbsp;&nbsp;&nbsp;&nbsp;plan = self.<span class="code-blue">design</span>(problem)</div>
+            <div><span class="line-no">05</span>&nbsp;&nbsp;&nbsp;&nbsp;result = self.<span class="code-blue">develop</span>(plan)</div>
+            <div><span class="line-no">06</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-purple">return</span> result.<span class="code-green">ship</span>()</div>
+            <div class="code-spacer"></div>
+            <div class="terminal-line"><span class="terminal-prompt">➜</span> tests passed <span class="terminal-check">✓</span></div>
+            <div class="terminal-line"><span class="terminal-prompt">➜</span> deployment ready <span class="terminal-check">✓</span></div>
+          </div>
+          <div class="window-footer"><span>UTF-8</span><span>Python 3.12</span><span>Ln 06, Col 28</span></div>
+        </div>
+        <div class="floating-chip chip-top"><span class="chip-icon">⌘</span> Clean architecture</div>
+        <div class="floating-chip chip-bottom"><span class="chip-icon green">↗</span> Built to scale</div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="section-wrap trust-inner"><span>ПРАКТИЧНЫЕ РЕШЕНИЯ</span><span>ЧИСТЫЙ КОД</span><span>ПОНЯТНЫЕ СРОКИ</span><span>ПОДДЕРЖКА ПОСЛЕ РЕЛИЗА</span></div>
+    </section>
+
+    <section class="section-wrap section-block" id="services">
+      <div class="section-heading">
+        <div><div class="eyebrow">01 / ЧЕМ ПОМОГУ</div><h2>Код — это инструмент.<br><span class="muted-heading">Результат — главное.</span></h2></div>
+        <p>Подключаюсь к задаче на нужном этапе: от проверки идеи до развития уже работающего продукта.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card"><div class="service-icon">⌘</div><h3>Telegram-боты</h3><p>Приём заявок, поддержка, каталоги, уведомления, платежи и админ-панели.</p><div class="service-tags"><span>aiogram</span><span>Telegram API</span></div></article>
+        <article class="service-card"><div class="service-icon">⤴</div><h3>Backend и API</h3><p>Сервисы, интеграции, авторизация, бизнес-логика и надёжная работа с данными.</p><div class="service-tags"><span>FastAPI</span><span>REST</span></div></article>
+        <article class="service-card"><div class="service-icon">⚙</div><h3>Автоматизация</h3><p>Убираю повторяющиеся ручные операции: обработка файлов, отчёты и синхронизация данных.</p><div class="service-tags"><span>Python</span><span>Integrations</span></div></article>
+        <article class="service-card"><div class="service-icon">◈</div><h3>Развитие продукта</h3><p>Рефакторинг, поиск ошибок, тесты, оптимизация и подготовка проекта к росту.</p><div class="service-tags"><span>PostgreSQL</span><span>Docker</span></div></article>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="projects">
+      <div class="section-heading projects-heading">
+        <div><div class="eyebrow">02 / ИЗБРАННЫЕ РАБОТЫ</div><h2>Проекты, которые<br><span class="muted-heading">решают реальные задачи.</span></h2></div>
+        <p>Ниже — демонстрационные кейсы, показывающие возможный подход к разработке. Перед публикацией замените их своими реальными проектами и ссылками на репозитории.</p>
+      </div>
+      <div class="filter-row" role="group" aria-label="Фильтр проектов">
+        <button class="filter-button active" data-filter="all">Все проекты <span>8</span></button>
+        <button class="filter-button" data-filter="bots">Telegram-боты</button>
+        <button class="filter-button" data-filter="backend">Backend / API</button>
+        <button class="filter-button" data-filter="automation">Автоматизация</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <article class="project-card" data-category="bots" data-project="leadbot">
+          <div class="project-art art-violet"><div class="art-window"><span class="art-dot"></span><span class="art-dot"></span><span class="art-dot"></span><div class="mock-chat"><b>Новая заявка</b><span>Имя: Алексей</span><span>Услуга: Консультация</span><div class="mock-button">Передать менеджеру →</div></div></div><span class="art-label">TELEGRAM AUTOMATION</span></div>
+          <div class="project-body"><div class="project-meta"><span>01 / BOT</span><span class="project-status">DEMO CASE</span></div><h3>LeadFlow — бот заявок</h3><p>Собирает заявки по сценарию, сохраняет их и отправляет уведомление ответственному менеджеру.</p><div class="tag-list"><span>Python</span><span>aiogram</span><span>SQLite</span></div><button class="text-link project-open" data-open="leadbot">Подробнее <span>↗</span></button></div>
+        </article>
+        <article class="project-card" data-category="automation" data-project="reporter">
+          <div class="project-art art-mint"><div class="chart-card"><span>WEEKLY REPORT</span><strong>+24.8%</strong><div class="chart-bars"><i style="height:30%"></i><i style="height:48%"></i><i style="height:42%"></i><i style="height:67%"></i><i style="height:54%"></i><i style="height:82%"></i><i style="height:100%"></i></div><small>Revenue overview</small></div><span class="art-label">REPORTING PIPELINE</span></div>
+          <div class="project-body"><div class="project-meta"><span>02 / AUTOMATION</span><span class="project-status">DEMO CASE</span></div><h3>ReportFlow — отчёты</h3><p>Обрабатывает CSV-файлы, рассчитывает метрики и автоматически отправляет сводку в Telegram.</p><div class="tag-list"><span>Python</span><span>Pandas</span><span>Scheduler</span></div><button class="text-link project-open" data-open="reporter">Подробнее <span>↗</span></button></div>
+        </article>
+        <article class="project-card" data-category="backend" data-project="fastapi">
+          <div class="project-art art-blue"><div class="api-card"><div class="api-top"><span>API STATUS</span><b>● OPERATIONAL</b></div><div class="api-route"><span class="method">GET</span><span>/api/v1/orders</span><span>200</span></div><div class="api-route"><span class="method post">POST</span><span>/api/v1/orders</span><span>201</span></div><div class="api-route"><span class="method">GET</span><span>/api/v1/health</span><span>200</span></div></div><span class="art-label">REST API</span></div>
+          <div class="project-body"><div class="project-meta"><span>03 / BACKEND</span><span class="project-status">DEMO CASE</span></div><h3>Order API — сервис заказов</h3><p>REST API для создания и отслеживания заказов с валидацией данных и документацией.</p><div class="tag-list"><span>FastAPI</span><span>PostgreSQL</span><span>Pytest</span></div><button class="text-link project-open" data-open="fastapi">Подробнее <span>↗</span></button></div>
+        </article>
+        <article class="project-card" data-category="bots" data-project="support">
+          <div class="project-art art-orange"><div class="support-ui"><div class="support-sidebar"><i></i><i></i><i></i></div><div class="support-main"><span class="support-pill">TICKET #1048</span><b>Проблема с заказом</b><p>Клиент отправил обращение</p><div class="support-reply">Ответ оператора готов</div></div></div><span class="art-label">CUSTOMER SUPPORT</span></div>
+          <div class="project-body"><div class="project-meta"><span>04 / BOT</span><span class="project-status">DEMO CASE</span></div><h3>HelpDesk Bot — поддержка</h3><p>Принимает обращения, присваивает номера и позволяет оператору отвечать через админ-чат.</p><div class="tag-list"><span>aiogram</span><span>FSM</span><span>PostgreSQL</span></div><button class="text-link project-open" data-open="support">Подробнее <span>↗</span></button></div>
+        </article>
+        <article class="project-card" data-category="automation" data-project="parser">
+          <div class="project-art art-pink"><div class="data-card"><div class="data-header"><span>DATA PIPELINE</span><span class="live-pill">RUNNING</span></div><div class="data-row"><i></i><span>Source data</span><b>✓</b></div><div class="data-row"><i></i><span>Validation</span><b>✓</b></div><div class="data-row"><i></i><span>Normalization</span><b>✓</b></div><div class="data-row"><i></i><span>Export CSV</span><b>✓</b></div></div><span class="art-label">DATA PROCESSING</span></div>
+          <div class="project-body"><div class="project-meta"><span>05 / AUTOMATION</span><span class="project-status">DEMO CASE</span></div><h3>DataCleaner — обработка данных</h3><p>Проверяет, очищает и нормализует табличные данные, формирует отчёт об ошибках и результат.</p><div class="tag-list"><span>Python</span><span>Pandas</span><span>CSV / Excel</span></div><button class="text-link project-open" data-open="parser">Подробнее <span>↗</span></button></div>
+        </article>
+        <article class="project-card" data-category="backend" data-project="auth">
+          <div class="project-art art-slate"><div class="security-card"><div class="shield">◇</div><div><span>AUTH SERVICE</span><strong>Access controlled</strong><small>Token verified · 12 ms</small></div><span class="security-check">✓</span></div><span class="art-label">AUTH & SECURITY</span></div>
+          <div class="project-body"><div class="project-meta"><span>06 / BACKEND</span><span class="project-status">DEMO CASE</span></div><h3>SecureGate — авторизация</h3><p>Демонстрационный сервис регистрации и входа с хешированием паролей и разграничением доступа.</p><div class="tag-list"><span>FastAPI</span><span>JWT</span><span>SQLAlchemy</span></div><button class="text-link project-open" data-open="auth">Подробнее <span>↗</span></button></div>
+        </article>
+        <article class="project-card" data-category="bots" data-project="booking">
+          <div class="project-art art-yellow"><div class="calendar-card"><div class="calendar-head"><span>BOOKING</span><span>OCT 2026</span></div><div class="calendar-grid"><i>ПН</i><i>ВТ</i><i>СР</i><i>ЧТ</i><i>ПТ</i><i>СБ</i><i>ВС</i><b>12</b><b>13</b><b class="selected">14</b><b>15</b><b>16</b><b>17</b><b>18</b></div><div class="calendar-foot">10:30 — доступно</div></div><span class="art-label">SCHEDULING BOT</span></div>
+          <div class="project-body"><div class="project-meta"><span>07 / BOT</span><span class="project-status">DEMO CASE</span></div><h3>Slotly — онлайн-запись</h3><p>Позволяет выбрать услугу и свободный слот, сохраняет запись и напоминает о визите.</p><div class="tag-list"><span>aiogram</span><span>PostgreSQL</span><span>Async</span></div><button class="text-link project-open" data-open="booking">Подробнее <span>↗</span></button></div>
+        </article>
+        <article class="project-card" data-category="automation" data-project="monitor">
+          <div class="project-art art-green"><div class="monitor-card"><div class="monitor-head"><span>SERVICE MONITOR</span><span class="live-pill">LIVE</span></div><div class="uptime"><strong>99.9%</strong><span>sample uptime metric</span></div><div class="uptime-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="monitor-foot"><span>API latency</span><b>84 ms</b></div></div><span class="art-label">MONITORING</span></div>
+          <div class="project-body"><div class="project-meta"><span>08 / AUTOMATION</span><span class="project-status">DEMO CASE</span></div><h3>PulseWatch — мониторинг</h3><p>Проверяет доступность сервисов по расписанию и отправляет уведомление при сбое.</p><div class="tag-list"><span>Python</span><span>HTTPX</span><span>Asyncio</span></div><button class="text-link project-open" data-open="monitor">Подробнее <span>↗</span></button></div>
+        </article>
+      </div>
+      <div class="demo-note"><span>ⓘ</span><p><strong>Важно:</strong> карточки — концепты для демонстрации компетенций. Не указывайте их как выполненные клиентские проекты, пока не реализуете их и не опубликуете код. Добавьте ссылки на реальные репозитории вместо кнопок «Подробнее» или оставьте описания как учебные кейсы.</p></div>
+    </section>
+
+    <section class="section-wrap section-block process-section" id="process">
+      <div class="section-heading"><div><div class="eyebrow">03 / КАК РАБОТАЮ</div><h2>Понятный процесс.<br><span class="muted-heading">Без сюрпризов.</span></h2></div><p>Договорённости фиксируются до начала разработки. Вы понимаете, что будет сделано, в какие сроки и что получите на выходе.</p></div>
+      <div class="process-grid">
+        <div class="process-step"><span>01</span><h3>Погружение</h3><p>Разбираюсь в задаче, ограничениях и критериях готовности.</p></div>
+        <div class="process-step"><span>02</span><h3>План и оценка</h3><p>Согласовываем объём, стоимость, этапы и сроки.</p></div>
+        <div class="process-step"><span>03</span><h3>Разработка</h3><p>Показываю промежуточный результат, тестирую и учитываю согласованную обратную связь.</p></div>
+        <div class="process-step"><span>04</span><h3>Передача</h3><p>Передаю код, инструкцию запуска и согласованные материалы.</p></div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block about-section" id="about">
+      <div class="about-panel">
+        <div class="about-mark">&lt;py /&gt;</div>
+        <div class="about-content"><div class="eyebrow">04 / ОБО МНЕ</div><h2>Надёжная разработка<br>с фокусом на бизнес.</h2><p>Я Python-разработчик. Помогаю пройти путь от идеи и MVP до масштабирования продукта: уточняю требования, выбираю практичную архитектуру и довожу задачу до понятного результата.</p><p>Для меня важны качество реализации, прозрачная коммуникация и соблюдение согласованных договорённостей. Если вижу риск по срокам или требованиям — сообщаю об этом заранее.</p><div class="about-highlights"><span>✓ Ответственный подход</span><span>✓ Понятные этапы</span><span>✓ Код с расчётом на поддержку</span></div></div>
+      </div>
+    </section>
+
+    <section class="section-wrap contact-section" id="contact">
+      <div class="contact-card">
+        <div class="eyebrow">05 / ОБСУДИМ ЗАДАЧУ</div>
+        <h2>Есть идея?<br><span class="gradient-text">Давайте воплотим её.</span></h2>
+        <p>Напишите пару слов о задаче. Обсудим цель, ограничения и следующий разумный шаг — без обязательств.</p>
+        <div class="contact-actions">
+          <a class="button button-primary" id="telegramLink" href="https://t.me/your_username" target="_blank" rel="noreferrer">Написать в Telegram <span>↗</span></a>
+          <a class="button button-ghost" id="githubLink" href="https://github.com/your_username" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+        </div>
+        <div class="contact-foot"><span><i class="status-dot"></i> Открыт к новым проектам</span><span>Обычно отвечаю в течение рабочего дня</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap"><a class="brand" href="#home"><span class="brand-mark">&lt;/&gt;</span><span>dev<span class="brand-dot">.</span>portfolio</span></a><span>Сделано с вниманием к деталям.</span><a href="#home">Наверх ↑</a></footer>
+
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Закрыть">×</button>
+      <div class="eyebrow" id="modalEyebrow">DEMO CASE</div>
+      <h2 id="modalTitle">Название проекта</h2>
+      <p id="modalDescription"></p>
+      <h3>Что демонстрирует кейс</h3><ul id="modalFeatures"></ul>
+      <div class="tag-list" id="modalTags"></div>
+      <p class="modal-disclaimer">Это описание демонстрационного кейса. Перед отправкой клиентам добавьте ссылку на готовый код, скриншоты и инструкции.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
